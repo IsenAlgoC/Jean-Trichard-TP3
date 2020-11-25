@@ -3,19 +3,21 @@
 #include<math.h>
 #define NBMAXNOTES 30
 
-float note = 0;
-float allnote[NBMAXNOTES];
-int comp = 0;
-int i = 0;
-char rep = 'e';
-char fin = 'N';
-int nb_abs = 0;
-float sum = 0;
-float petit = 20;
-float grand = 0;
-float ET = 0;
 
 int main(){
+
+	float note = 0;
+	float allnote[NBMAXNOTES];
+	int comp = 0;
+	int i = 0;
+	char rep = 'e';
+	char fin = 'N';
+	int nb_abs = 0;
+	float sum = 0;
+	float petit = 20;
+	float grand = 0;
+	float ET = 0;
+
 	for (i = 0; i < NBMAXNOTES; i++)
 		allnote[i] = -2;
 
@@ -67,7 +69,10 @@ int main(){
 	}
 	sum = sum / (comp - nb_abs);
 
-	
+	i = 0;
+
+
+
 	printf("\nLe nombre d'absences est de %d\n", nb_abs);
 	printf("\nLa moyenne des notes valides est de %.2f\n", sum);
 	printf("\nLa plus petite note est de %.2f\n", petit);
@@ -77,4 +82,5 @@ int main(){
 	
 
 	system("pause");
+	return(EXIT_SUCCESS);
 }

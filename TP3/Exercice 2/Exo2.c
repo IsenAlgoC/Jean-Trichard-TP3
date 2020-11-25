@@ -7,6 +7,7 @@ int main() {
 	printf("Le nombre d'octets necessaire pour la valeur 2868838400 est de :%d\n", sizeof(valeur));
 	printf("Le nombre de bits necessaire pour la valeur 2868838400 est de :%d\n", sizeof(valeur) * 8);
 	
+	//Ici l'on fait des if et else afin d'alliner parfaitement les ON et OFF
 
 	for (i = 0; i < sizeof(valeur) * 8; i++) {
 		if (i<10) {
@@ -31,5 +32,6 @@ int main() {
 
 
 	system("pause");
+	return(EXIT_SUCCESS);
 }
 

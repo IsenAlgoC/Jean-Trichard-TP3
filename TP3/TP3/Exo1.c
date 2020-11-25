@@ -13,4 +13,5 @@ int main() {
 	//Il faut donc ajouter des parenthèses
 
 	system("pause");
+	return(EXIT_SUCCESS);
 }
